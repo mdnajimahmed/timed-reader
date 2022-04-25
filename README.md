@@ -32,7 +32,7 @@ func waitForTimeout(to chan int) {
 
 func readFromConsole(ch chan string) {
 	var s string
-	fmt.Scanf("%s", &s)
+	fmt.Scanf("%s\n", &s)
 	ch <- s
 }
 
